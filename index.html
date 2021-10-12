@@ -1,0 +1,28 @@
+<html>
+	<h1 style="text-align:center; color: orange" id="NYC">
+		Pretty Header
+	</h1>
+	<p>
+		Haii. Test.
+	</p>
+	<p>
+		Click <a href="http://nyc.gov"> here </a> to go to the homepage of one of Earth's greatest cities.
+	</p>
+	<button onclick="colorChanger()">
+		Click Me!
+	</button>
+
+	<script>
+		function colorChanger() {
+			var newColor;
+			color = document.getElementById("NYC").style.color;
+			if (color == "orange") {
+				newColor = "green";
+			}
+			else {
+				newColor = "orange";
+			}
+			document.getElementById("NYC").style.color = newColor;
+		}
+	</script>
+</html>
